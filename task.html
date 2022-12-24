@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="Fitnes" width="400" border="1">
+        <thead>
+            <tr>
+                <td>Тренери</td>
+                <td id="weekdays">Понеділок</td>
+                <td id="weekdays">Вівторок</td>
+                <td id="weekdays">Середа</td>
+                <td id="weekdays">Четвер</td>
+                <td id="weekdays">П'ятниця</td>
+                <td id="the weekend">Субота</td>
+                <td id="the weekend">Неділя</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name", id="Master">Олександр (майстер)</td>
+                <td class="Work">так 9-15</td>
+                <td class="Work">ні</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work">так 9-15</td>
+                <td class="Work">ні</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work", id="all day">так Весь день</td>
+            </tr>
+            <tr>
+                <td class="name", id="trainee">Владислав (стажер)</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work", id="1 variable">так 9-15</td>
+                <td class="Work">ні</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work", id="1 variable">так 9-15</td>
+                <td class="Work">ні</td>
+                <td class="Work">так  Весь день</td>
+            </tr>
+            <tr>
+                <td class="name", id="new worker">Кирило (новенький)</td>
+                <td class="Work">ні</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work", id="1 variable">так 9-15</td>
+                <td class="Work">ні</td>
+                <td class="Work", id="2 variable">так 15-21</td>
+                <td class="Work", id="1 variable">так 9-15</td>
+                <td class="Work", id="all day">так  Весь день</td>
+            </tr>
+        </tbody>
+    </table>
+    <form method="post" action="handler.php">
+        Номер телефону<br>
+        <input type="text" id="number" placeholder="+38()">
+        <br>Ваша пошта<br>
+        <input type="email" id="Email" placeholder="Email пошта">
+        <br><br>
+        <button type="submit">Надіслати дані на телефон</button>
+    </form>
+    <br><br>
+    день тижня
+    <br><br>
+    будні
+    <input type="radio" id="day">
+    вихідні
+    <input type="radio" id="day">
+    
+    <br><br>
+    частинна дня
+    <br><br>
+    перша частинна дня
+    <input type="radio" id="time to work">
+    друга частинна дня
+    <input type="radio" id="time to work">
+    весь день
+    <input type="radio" id="time to work">
+    <br><br>
+    рівень тренера
+    <br><br>
+    майстер
+    <input type="radio" id="lvl train">
+    стажер
+    <input type="radio" id="lvl train">
+    новенький
+    <input type="radio" id="lvl train" checked>
+</body>
+</html>

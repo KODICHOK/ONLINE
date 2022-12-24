@@ -1,0 +1,19 @@
+td:nth-of-type(3) {
+    background-color: rgba(226, 221, 221, 0.851);
+}
+td:nth-of-type(7) {
+    background-color: rgba(226, 221, 221, 0.851);
+}
+td:nth-of-type(5) {
+    background-color: rgba(226, 221, 221, 0.851);
+}
+td:nth-of-type(1) {
+    background-color: rgba(226, 221, 221, 0.851);
+}
+tr :hover {
+    color: blue;
+    background-color: antiquewhite;
+}
+.day {
+    display: none;
+}
